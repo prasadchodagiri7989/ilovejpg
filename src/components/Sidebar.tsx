@@ -56,8 +56,8 @@ export const Sidebar = ({ open, onClose }: SidebarProps) => {
 
       <div className="flex-1 overflow-y-auto p-4 space-y-1">
         <SidebarLink to="/" icon={Home} label="Home" onClose={onClose} />
-        <SidebarLink to="/jpgtopng" icon={ImageIcon} label="JPG to PNG" onClose={onClose} />
-        <SidebarLink to="/jpgtowebp" icon={ImageIcon} label="JPG to WEBP" onClose={onClose} />
+        <SidebarLink to="/jpg_to_png" icon={ImageIcon} label="JPG to PNG" onClose={onClose} />
+        <SidebarLink to="/jpg_to_webp" icon={ImageIcon} label="JPG to WEBP" onClose={onClose} />
       </div>
 
       <div className="p-4 border-t border-gray-200/50 dark:border-gray-800/50 text-center">
