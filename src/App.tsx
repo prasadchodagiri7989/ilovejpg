@@ -12,6 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import { Layout } from "./components/Layout";
 import Index from "@/pages/Index";
 import { JPGtoPNG } from "./pages/image/jpg/JPGtoPNG";
+import { JPGtoWEBP } from "./pages/image/jpg/JPGtoWEBP";
 
 // Create a QueryClient instance
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Layout><Index /></Layout>} />
             <Route path="/jpgtopng" element={<Layout><JPGtoPNG /></Layout>} />
+            <Route path="/jpgtowebp" element={<Layout><JPGtoWEBP /></Layout>} />
             {/* Add more routes here like /pngtopdf, /imagetopdf, etc. */}
           </Routes>
         </BrowserRouter>
