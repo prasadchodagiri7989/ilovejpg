@@ -90,7 +90,7 @@ export const Sidebar = ({ open, onClose }: SidebarProps) => {
         </button>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-4 space-y-1">
+      <div className="flex-1 overflow-y-auto p-4 space-y-1 hide-scrollbar">
         <SidebarLink to="/" icon={Home} label="Home" onClose={onClose} />
 
         <div className="py-2">
