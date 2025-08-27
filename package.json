@@ -47,6 +47,8 @@
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.3.0",
     "fs": "^0.0.1-security",
+    "gifuct-js": "^2.1.2",
+    "heic2any": "^0.0.4",
     "html2canvas": "^1.4.1",
     "input-otp": "^1.2.4",
     "jspdf": "^3.0.1",

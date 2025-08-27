@@ -1,6 +1,7 @@
 // src/App.tsx
 
 import React from "react";
+import { decompressFrames, parseGIF } from "gifuct-js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -42,6 +43,19 @@ import { WEBPtoGIF } from "./pages/image/webp/WEBPtoGIF";
 import { BMPtoJPG } from "./pages/image/bmp/BMPtoJPG";
 import { BMPtoPNG } from "./pages/image/bmp/BMPtoPNG";
 import { BMPtoPDF } from "./pages/image/bmp/BMPtoPDF";
+{/*gif*/}
+import { GIFtoJPG } from "./pages/image/gif/GIFtoJPG";
+import { GIFtoPNG } from "./pages/image/gif/GIFtoPNG";
+import { GIFtoWebP } from "./pages/image/gif/GIFtoWebP";
+{/*svg*/}
+import { SVGtoPNG } from "./pages/image/svg/SVGtoPNG";
+import { SVGtoJPG } from "./pages/image/svg/SVGtoJPG";
+import { SVGtoPDF } from "./pages/image/svg/SVGtoPDF";
+{/*heic*/}
+import { HEICtoJPG } from "./pages/image/heic/HEICtoJPG";
+import { HEICtoPNG } from "./pages/image/heic/HEICtoPNG";
+import { HEICtoWEBP } from "./pages/image/heic/HEICtoWEBP";
+
 
 
 // Create a QueryClient instance
@@ -88,7 +102,25 @@ const App = () => (
             <Route path="/bmp-to-jpg" element={<Layout><BMPtoJPG /></Layout>} />
             <Route path="/bmp-to-png" element={<Layout><BMPtoPNG /></Layout>} />
             <Route path="/bmp-to-pdf" element={<Layout><BMPtoPDF /></Layout>} />
+          {/*gif*/}
+            <Route path="/gif-to-jpg-frame" element={<Layout><GIFtoJPG /></Layout>} />
+            <Route path="/gif-to-png" element={<Layout><GIFtoPNG /></Layout>} />
+            <Route path="/gif-to-webp" element={<Layout><GIFtoWebP /></Layout>} />
+          {/*svg*/}  
+            <Route path="/svg-to-png" element={<Layout><SVGtoPNG /></Layout>} />
+            <Route path="/svg-to-jpg" element={<Layout><SVGtoJPG /></Layout>} />
+            <Route path="/svg-to-pdf" element={<Layout><SVGtoPDF /></Layout>} />
+            {/*heic*/}
+            <Route path="/heic-to-jpg" element={<Layout><HEICtoJPG /></Layout>} />
+            <Route path="/heic-to-png" element={<Layout><HEICtoPNG /></Layout>} />
+            <Route path="/heic-to-webp" element={<Layout><HEICtoWEBP /></Layout>} />
+            
 
+
+            
+
+
+            
 
 
 
