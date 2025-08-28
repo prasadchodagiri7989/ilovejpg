@@ -1,7 +1,10 @@
 // src/App.tsx
 
 import React from "react";
-import { decompressFrames, parseGIF } from "gifuct-js";
+import { SVGtoPNG } from "./pages/image/svg/SVGtoPNG";
+import { SVGtoJPG } from "./pages/image/svg/SVGtoJPG";
+import { SVGtoPDF } from "./pages/image/svg/SVGtoPDF";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -19,9 +22,7 @@ import { JPGtoGIF } from "./pages/image/jpg/JPGtoGIF";
 import { JPGtoTIFF } from "./pages/image/jpg/JPGtoTIFF";
 import { JPGtoPDF } from "./components/tools/JPGtoPDF";
 import { JPGtoSVG } from "./pages/image/jpg/JPGtoSVG";
-import { SVGtoPNG } from "./pages/image/svg/SVGtoPNG";
-import { SVGtoJPG } from "./pages/image/svg/SVGtoJPG";
-import { SVGtoPDF } from "./pages/image/svg/SVGtoPDF";
+
 {/*JPEG*/ }
 import { JPEGtoPNG } from "./pages/image/jpeg/JPEGtoPNG";
 import { JPEGtoWEBP } from "./pages/image/jpeg/JPEGtoWEBP";
@@ -50,10 +51,7 @@ import { BMPtoPDF } from "./pages/image/bmp/BMPtoPDF";
 import { GIFtoJPG } from "./pages/image/gif/GIFtoJPG";
 import { GIFtoPNG } from "./pages/image/gif/GIFtoPNG";
 import { GIFtoWebP } from "./pages/image/gif/GIFtoWebP";
-{/*svg*/}
-import { SVGtoPNG } from "./pages/image/svg/SVGtoPNG";
-import { SVGtoJPG } from "./pages/image/svg/SVGtoJPG";
-import { SVGtoPDF } from "./pages/image/svg/SVGtoPDF";
+
 {/*heic*/}
 import { HEICtoJPG } from "./pages/image/heic/HEICtoJPG";
 import { HEICtoPNG } from "./pages/image/heic/HEICtoPNG";
