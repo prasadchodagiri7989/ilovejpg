@@ -1,2 +1,27 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow: /
+Allow: /
+
+# Disallow private/admin areas if any
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl-delay (optional - helps with server load)
+Crawl-delay: 0
+
+# Sitemap location
+Sitemap: https://ilovejpg.in/sitemap.xml
+Sitemap: https://ilovejpg.in/sitemap-tools.xml
+
+# Popular search engine specific rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

@@ -100,7 +100,13 @@ export const PDFtoWord = () => {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>PDF to Word Converter</BreadcrumbPage>
+            <BreadcrumbLink asChild>
+              <Link to="/tools/pdf">PDF Tools</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>PDF to Word</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
