@@ -24,7 +24,8 @@ export default function ScientificCalculator() {
 
   const calculate = () => {
     try {
-      const result = eval(expression);
+      // Using Function constructor instead of eval for better security and minification compatibility
+      const result = new Function('return ' + expression)();
       setDisplay(result.toString());
       setExpression(result.toString());
     } catch {
